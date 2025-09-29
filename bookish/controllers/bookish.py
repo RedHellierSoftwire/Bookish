@@ -21,8 +21,8 @@ def bookish_routes(app):
         copyResults = [copy.serialize() for copy in copies]
         return {"copies": copyResults}
 
-    @app.route('/users')
-    def handle_users():
-        users = User.query.all()
-        userResults = [user.serialize() for user in users]
-        return {"users": userResults}
+    # @app.route('/users')
+    # def handle_users():
+    #     users = User.query.all()
+    #     userResults = [user.serialize() for user in users]
+    #     return {"users": userResults}
